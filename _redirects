@@ -1,0 +1,20 @@
+# Netlify / Cloudflare Pages — only used if BattleGroundZ signs and the site migrates off WordPress/Avada.
+# [REDIRECT MAP — ENUMERATE EVERY CURRENT AVADA PERMALINK, CONFIRM] — the slugs below are assumed from their nav labels.
+
+# Nine experience pages — keep every one alive (rewrite so the old URL stays)
+/paintball/       /paintball.html      200
+/airsoft/         /airsoft.html        200
+/arcade/          /arcade.html         200
+/gel-blaster/     /gel-blaster.html    200
+/archery-tag/     /archery-tag.html    200
+/dart-wars/       /dart-wars.html      200
+/dodgeball/       /dodgeball.html      200
+/lazer-wars/      /lazer-wars.html     200
+/cornhole/        /cornhole.html       200
+
+# 35 live events = 35 indexed URLs. Each /event/<slug>/ needs its own page or its own redirect after migration.
+# This catch-all is a safety net only, not the plan: [MAP ALL 35 /event/ PERMALINKS INDIVIDUALLY, CONFIRM]
+/event/*          /events.html         302
+
+/contact/         /contact.html        200
+# Job application file: copy across at its current wp-content path. [JOB APPLICATION FILE PATH — CONFIRM]
