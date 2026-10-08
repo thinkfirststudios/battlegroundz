@@ -554,3 +554,11 @@ html:not(.js) .eyebrow::after { transform: scaleX(1); }
 .btn--outline { background: transparent; }
 .section-head h2, .section-head h2 .big, .count-line .big, .special .price, .orbit-num { -webkit-text-fill-color: currentColor; }
 .eyebrow::after { background: currentColor; width: 48px; }
+
+/* v8: experiences section on solid logo red (Alex, 2026-10-08) */
+#experiences { background: #C01010; }
+#experiences .eyebrow { color: #fff; }
+#experiences .section-head h2 { color: #fff; }
+#experiences .section-head p { color: #FFE3E0; }
+#experiences .count-line .big { color: var(--book); text-shadow: 0 2px 0 rgba(0, 0, 0, .25); }
+#experiences .tile { border-color: rgba(0, 0, 0, .35); box-shadow: 0 10px 30px rgba(0, 0, 0, .35); }
