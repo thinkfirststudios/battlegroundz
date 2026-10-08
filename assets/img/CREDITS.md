@@ -11,7 +11,8 @@ people. Nothing was taken from battlegroundz.net.
 
 | File | Pexels ID | Stands in for |
 |---|---|---|
-| hero-arena | 2020432 | hero — dark interior, haze, stage lights |
+| hero-arcade / hero-arcade-mobile | 35736659 | hero — empty arcade floor, no people. Heavily blurred on purpose: the original shows cabinet names and a pro sports team logo |
+| hero-arena | 2020432 | previous hero, now unused (spare) |
 | hero-mobile | 9271247 | hero (mobile) — light beams |
 | act-paintball / wide-paintball | 15449254 | Paintball |
 | act-airsoft / wide-airsoft | 3706640 | Airsoft (masked adult) |

@@ -488,3 +488,12 @@ html:not(.js) .eyebrow::after { transform: scaleX(1); }
   .marquee-track > :nth-child(n+19) { display: none; }
   .eyebrow::after { transform: scaleX(1); }
 }
+
+/* v4: photo hero (orbit removed at Alex's request) */
+.hero--photo { background: var(--ground); }
+.hero--photo .hero-photo { opacity: 1; mix-blend-mode: normal; }
+.hero--photo .hero-photo img { animation: heroZoom 24s ease-in-out infinite alternate; }
+@keyframes heroZoom { from { transform: scale(1.02); } to { transform: scale(1.09); } }
+.hero--photo::before { background: linear-gradient(90deg, rgba(11, 11, 13, .92) 0%, rgba(11, 11, 13, .7) 38%, rgba(11, 11, 13, .15) 70%, rgba(11, 11, 13, .35) 100%), linear-gradient(0deg, var(--ground) 0%, rgba(11, 11, 13, 0) 30%); }
+.hero--photo .hero-copy { max-width: 620px; }
+@media (max-width: 700px) { .hero--photo::before { background: linear-gradient(0deg, var(--ground) 0%, rgba(11, 11, 13, .82) 45%, rgba(11, 11, 13, .45) 100%); } }
