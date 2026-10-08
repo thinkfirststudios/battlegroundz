@@ -11,7 +11,8 @@ people. Nothing was taken from battlegroundz.net.
 
 | File | Pexels ID | Stands in for |
 |---|---|---|
-| hero-laser-tunnel | 36488270 | hero card — green laser corridor, one distant anonymous adult silhouette |
+| hero-paintball | 15449254 | hero card — paintball field, masked adult player. League logos on two bunkers and text on the jersey/headband softly blurred out |
+| hero-laser-tunnel | 36488270 | previous hero, unused (spare) — hero card — green laser corridor, one distant anonymous adult silhouette |
 | hero-lazer / hero-lazer-mobile / hero-lazer-card | 3869084 | previous hero, unused (spare) — hero — laser tag, adult players shown chest-down (top strip cropped so no face is visible), no brand marks |
 | hero-arcade / hero-arcade-mobile | 35736659 | previous hero, unused (spare) — hero — empty arcade floor, no people. Heavily blurred on purpose: the original shows cabinet names and a pro sports team logo |
 | hero-arena | 2020432 | previous hero, now unused (spare) |
