@@ -527,3 +527,30 @@ html:not(.js) .eyebrow::after { transform: scaleX(1); }
 .hero--pb .hero-photo img { animation: none; object-position: 62% 50%; }
 .hero--pb::before { background: linear-gradient(90deg, rgba(11, 11, 13, .9) 0%, rgba(11, 11, 13, .72) 32%, rgba(11, 11, 13, .1) 62%, rgba(11, 11, 13, 0) 100%), linear-gradient(0deg, var(--ground) 0%, rgba(11, 11, 13, 0) 22%); }
 @media (max-width: 700px) { .hero--pb::before { background: linear-gradient(0deg, var(--ground) 0%, rgba(11, 11, 13, .85) 50%, rgba(11, 11, 13, .25) 100%); } .hero--pb { align-items: flex-end; } }
+
+/* v7: solid backgrounds (Alex, 2026-10-08). Photo scrims stay — they keep text legible over images. */
+.section--glow-green, .section--glow-red, .section, .hero--split { background: var(--ground); }
+.section--glow-green { background: #0F1410; }
+.section--glow-red { background: #141012; }
+.light { background: var(--light-ground); }
+.pass-band { background: var(--green-deep); animation: none; }
+.waiver-strip { background: var(--surface); }
+.marquee { background: var(--surface); }
+.site-header.is-condensed { background: rgba(11, 11, 13, .97); }
+.page-hero { background: var(--ground); }
+.page-hero::before { background: linear-gradient(0deg, rgba(11, 11, 13, .96) 6%, rgba(11, 11, 13, .7) 60%, rgba(11, 11, 13, .5)); }
+.card, .events-list li { background: var(--surface); }
+.light .card { background: #fff; }
+.special { background: var(--surface); }
+.special .price { background: none; -webkit-background-clip: border-box; background-clip: border-box; color: var(--ink); }
+.special::before { background: var(--hue); animation: none; }
+.section-head h2, .count-line .big, .orbit-num { background: none; -webkit-background-clip: border-box; background-clip: border-box; color: var(--ink); }
+.count-line .big { color: var(--book); }
+.light .section-head h2 { color: var(--ink-on-light); }
+.mega-tile { background: var(--surface); }
+.bar { background: var(--bar-ground); }
+.tile-body::before { display: none; }
+.progress { background: var(--violet); }
+.btn--outline { background: transparent; }
+.section-head h2, .section-head h2 .big, .count-line .big, .special .price, .orbit-num { -webkit-text-fill-color: currentColor; }
+.eyebrow::after { background: currentColor; width: 48px; }
