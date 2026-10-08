@@ -11,7 +11,8 @@ people. Nothing was taken from battlegroundz.net.
 
 | File | Pexels ID | Stands in for |
 |---|---|---|
-| hero-arcade / hero-arcade-mobile | 35736659 | hero — empty arcade floor, no people. Heavily blurred on purpose: the original shows cabinet names and a pro sports team logo |
+| hero-lazer / hero-lazer-mobile | 3869084 | hero — laser tag, adult players shown chest-down (top strip cropped so no face is visible), no brand marks |
+| hero-arcade / hero-arcade-mobile | 35736659 | previous hero, unused (spare) — hero — empty arcade floor, no people. Heavily blurred on purpose: the original shows cabinet names and a pro sports team logo |
 | hero-arena | 2020432 | previous hero, now unused (spare) |
 | hero-mobile | 9271247 | hero (mobile) — light beams |
 | act-paintball / wide-paintball | 15449254 | Paintball |
