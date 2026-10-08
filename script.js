@@ -91,5 +91,28 @@
     });
   });
 
+
+  /* v3 motion: scroll progress bar + gentle 3D tilt on activity tiles (pointer devices only) */
+  if (!reduce) {
+    var bar = document.createElement("div"); bar.className = "progress"; bar.setAttribute("aria-hidden", "true");
+    document.body.appendChild(bar);
+    var setBar = function () {
+      var max = document.documentElement.scrollHeight - window.innerHeight;
+      bar.style.transform = "scaleX(" + (max > 0 ? Math.min(1, window.scrollY / max) : 0) + ")";
+    };
+    window.addEventListener("scroll", setBar, { passive: true }); setBar();
+    if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
+      document.querySelectorAll(".tile").forEach(function (t) {
+        t.addEventListener("pointermove", function (e) {
+          var r = t.getBoundingClientRect();
+          var x = (e.clientX - r.left) / r.width - 0.5, y = (e.clientY - r.top) / r.height - 0.5;
+          t.style.setProperty("--ry", (x * 8).toFixed(2) + "deg");
+          t.style.setProperty("--rx", (y * -8).toFixed(2) + "deg");
+        });
+        t.addEventListener("pointerleave", function () { t.style.removeProperty("--rx"); t.style.removeProperty("--ry"); });
+      });
+    }
+  }
+
   document.querySelectorAll("[data-year]").forEach(function (n) { n.textContent = yr; });
 })();

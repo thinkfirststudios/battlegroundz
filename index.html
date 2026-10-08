@@ -33,19 +33,28 @@
 </nav>
 <main id="main">
 
-<section class="hero" aria-labelledby="hero-h">
-  <picture><source media="(max-width:700px)" srcset="assets/img/PLACEHOLDER-hero-mobile.webp"><img class="hero-img" src="assets/img/PLACEHOLDER-hero-arena.webp" alt="Dark venue interior with violet haze and a row of stage lights" width="1920" height="1080" fetchpriority="high"></picture>
-  <div class="wrap">
-    <h1 id="hero-h" style="margin:0"><img class="hero-logo" src="assets/logo/bgz-logo.png" alt="BattleGroundZ — Challenge Accepted" width="558" height="304" fetchpriority="high"></h1>
-    <p class="hero-sub">Choose BattleGroundz for your next family fun day out, party, or corporate event.</p>
-    <div class="btn-row"><a class="btn btn--book" href="contact.html#book">Book</a><a class="btn btn--outline" href="#experiences">See All 9 Experiences</a></div>
-    <div class="hero-facts"><span>100 Higginson Ave, Lincoln, RI 02865</span><a href="tel:+14013053600">401-305-3600</a></div>
+<section class="hero hero--fx" aria-labelledby="hero-h">
+  <picture class="hero-photo"><source media="(max-width:700px)" srcset="assets/img/PLACEHOLDER-hero-mobile.webp"><img class="hero-img" src="assets/img/PLACEHOLDER-hero-arena.webp" alt="" width="1920" height="1080" fetchpriority="high"></picture>
+  <div class="blob blob--green" aria-hidden="true"></div><div class="blob blob--red" aria-hidden="true"></div><div class="blob blob--gold" aria-hidden="true"></div>
+  <div class="particles" aria-hidden="true"><i style="--x:43%;--s:8px;--d:22s;--delay:-20s;--c:var(--violet)"></i><i style="--x:8%;--s:7px;--d:29s;--delay:-17s;--c:var(--magenta)"></i><i style="--x:14%;--s:11px;--d:25s;--delay:-1s;--c:var(--book)"></i><i style="--x:66%;--s:9px;--d:16s;--delay:-2s;--c:var(--violet)"></i><i style="--x:57%;--s:12px;--d:17s;--delay:-7s;--c:var(--magenta)"></i><i style="--x:13%;--s:14px;--d:22s;--delay:-1s;--c:var(--book)"></i><i style="--x:74%;--s:7px;--d:19s;--delay:-20s;--c:var(--violet)"></i><i style="--x:82%;--s:15px;--d:16s;--delay:-18s;--c:var(--magenta)"></i><i style="--x:76%;--s:12px;--d:16s;--delay:-7s;--c:var(--book)"></i><i style="--x:7%;--s:14px;--d:29s;--delay:-4s;--c:var(--violet)"></i><i style="--x:39%;--s:12px;--d:18s;--delay:-17s;--c:var(--magenta)"></i><i style="--x:17%;--s:15px;--d:20s;--delay:-17s;--c:var(--book)"></i><i style="--x:89%;--s:8px;--d:17s;--delay:-18s;--c:var(--violet)"></i><i style="--x:75%;--s:16px;--d:19s;--delay:-11s;--c:var(--magenta)"></i><i style="--x:14%;--s:14px;--d:27s;--delay:-2s;--c:var(--book)"></i><i style="--x:74%;--s:6px;--d:25s;--delay:-6s;--c:var(--violet)"></i></div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <h1 id="hero-h" style="margin:0"><img class="hero-logo" src="assets/logo/bgz-logo.png" alt="BattleGroundZ — Challenge Accepted" width="558" height="304" fetchpriority="high"></h1>
+      <span class="hero-beam" aria-hidden="true"></span>
+      <p class="hero-sub">Choose BattleGroundz for your next family fun day out, party, or corporate event.</p>
+      <div class="btn-row"><a class="btn btn--book" href="contact.html#book">Book</a><a class="btn btn--outline" href="#experiences">See All 9 Experiences</a></div>
+      <div class="hero-facts"><span>100 Higginson Ave, Lincoln, RI 02865</span><a href="tel:+14013053600">401-305-3600</a></div>
+    </div>
+    <nav class="orbit" aria-label="The 9 experiences">
+      <div class="orbit-core"><span class="orbit-num" data-count="9">9</span><span class="orbit-label">experiences</span></div>
+      <ul class="orbit-ring"><li style="--i:0;--hue:var(--c-paintball)"><a href="paintball.html"><span>Paintball</span></a></li><li style="--i:1;--hue:var(--c-airsoft)"><a href="airsoft.html"><span>Airsoft</span></a></li><li style="--i:2;--hue:var(--c-arcade)"><a href="arcade.html"><span>Arcade</span></a></li><li style="--i:3;--hue:var(--c-gel)"><a href="gel-blaster.html"><span>Gel Blaster</span></a></li><li style="--i:4;--hue:var(--c-archery)"><a href="archery-tag.html"><span>Archery Tag</span></a></li><li style="--i:5;--hue:var(--c-dart)"><a href="dart-wars.html"><span>Dart Wars</span></a></li><li style="--i:6;--hue:var(--c-dodge)"><a href="dodgeball.html"><span>Dodgeball</span></a></li><li style="--i:7;--hue:var(--c-lazer)"><a href="lazer-wars.html"><span>Lazer Wars</span></a></li><li style="--i:8;--hue:var(--c-cornhole)"><a href="cornhole.html"><span>Cornhole</span></a></li></ul>
+    </nav>
   </div>
-  <span class="img-label">[IMAGE: hero — dark arena interior, neon and beam lighting, no people] stock placeholder</span>
-  <span class="laser-edge" aria-hidden="true"></span>
+  <span class="img-label">[IMAGE: hero — dark venue interior, haze and beam lighting, no people] stock placeholder</span>
 </section>
+<div class="marquee" aria-hidden="true"><div class="marquee-track"><span style="color:var(--c-paintball)">Paintball</span><b aria-hidden="true">✦</b><span style="color:var(--c-airsoft)">Airsoft</span><b aria-hidden="true">✦</b><span style="color:var(--c-arcade)">Arcade</span><b aria-hidden="true">✦</b><span style="color:var(--c-gel)">Gel Blaster</span><b aria-hidden="true">✦</b><span style="color:var(--c-archery)">Archery Tag</span><b aria-hidden="true">✦</b><span style="color:var(--c-dart)">Dart Wars</span><b aria-hidden="true">✦</b><span style="color:var(--c-dodge)">Dodgeball</span><b aria-hidden="true">✦</b><span style="color:var(--c-lazer)">Lazer Wars</span><b aria-hidden="true">✦</b><span style="color:var(--c-cornhole)">Cornhole</span><b aria-hidden="true">✦</b><span style="color:var(--c-paintball)">Paintball</span><b aria-hidden="true">✦</b><span style="color:var(--c-airsoft)">Airsoft</span><b aria-hidden="true">✦</b><span style="color:var(--c-arcade)">Arcade</span><b aria-hidden="true">✦</b><span style="color:var(--c-gel)">Gel Blaster</span><b aria-hidden="true">✦</b><span style="color:var(--c-archery)">Archery Tag</span><b aria-hidden="true">✦</b><span style="color:var(--c-dart)">Dart Wars</span><b aria-hidden="true">✦</b><span style="color:var(--c-dodge)">Dodgeball</span><b aria-hidden="true">✦</b><span style="color:var(--c-lazer)">Lazer Wars</span><b aria-hidden="true">✦</b><span style="color:var(--c-cornhole)">Cornhole</span><b aria-hidden="true">✦</b></div></div>
 
-<section class="section" id="experiences" aria-labelledby="exp-h"><div class="wrap">
+<section class="section section--glow-green" id="experiences" aria-labelledby="exp-h"><div class="wrap">
   <div class="section-head rv"><span class="eyebrow">Pick your battle</span><h2 id="exp-h" class="count-line"><span class="big" data-count="9">9</span> experiences. One building.</h2><p>Every one of them has its own page, its own colour and its own rules.</p></div>
   <div class="activity-grid rv-stagger"><a class="tile tile--paintball" href="paintball.html" style="--hue:var(--c-paintball)">
   <img src="assets/img/PLACEHOLDER-act-paintball.webp" alt="Masked player kneeling behind inflatable bunkers on a field" width="900" height="1125" loading="lazy">
@@ -113,7 +122,7 @@
 </a></div>
 </div></section>
 
-<section class="section" style="padding-top:0" aria-labelledby="sp-h"><div class="wrap">
+<section class="section section--glow-red" aria-labelledby="sp-h"><div class="wrap">
   <div class="section-head rv "><span class="eyebrow">This week</span><h2><span id="sp-h">This week at BattleGroundZ</span></h2><p>Three reasons to come midweek.</p></div>
   <div class="grid grid--3 rv-stagger"><article class="special" style="--hue:var(--c-airsoft)">
   <span class="day">Tuesdays</span><span class="num muted">5:00pm–10:00pm</span>
