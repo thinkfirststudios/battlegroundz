@@ -521,3 +521,9 @@ html:not(.js) .eyebrow::after { transform: scaleX(1); }
 .actionbar .ab-book { background: var(--book); }
 .bar .btn--outline { border-color: var(--bar-brass) !important; }
 .bar .btn--outline:hover { background: var(--bar-brass); color: var(--bar-ground) !important; }
+
+/* v6: full-bleed paintball hero */
+.hero--pb { min-height: calc(100vh - 110px); }
+.hero--pb .hero-photo img { animation: none; object-position: 62% 50%; }
+.hero--pb::before { background: linear-gradient(90deg, rgba(11, 11, 13, .9) 0%, rgba(11, 11, 13, .72) 32%, rgba(11, 11, 13, .1) 62%, rgba(11, 11, 13, 0) 100%), linear-gradient(0deg, var(--ground) 0%, rgba(11, 11, 13, 0) 22%); }
+@media (max-width: 700px) { .hero--pb::before { background: linear-gradient(0deg, var(--ground) 0%, rgba(11, 11, 13, .85) 50%, rgba(11, 11, 13, .25) 100%); } .hero--pb { align-items: flex-end; } }
