@@ -497,3 +497,27 @@ html:not(.js) .eyebrow::after { transform: scaleX(1); }
 .hero--photo::before { background: linear-gradient(90deg, rgba(11, 11, 13, .92) 0%, rgba(11, 11, 13, .7) 38%, rgba(11, 11, 13, .15) 70%, rgba(11, 11, 13, .35) 100%), linear-gradient(0deg, var(--ground) 0%, rgba(11, 11, 13, 0) 30%); }
 .hero--photo .hero-copy { max-width: 620px; }
 @media (max-width: 700px) { .hero--photo::before { background: linear-gradient(0deg, var(--ground) 0%, rgba(11, 11, 13, .82) 45%, rgba(11, 11, 13, .45) 100%); } }
+
+/* v5: split hero (photo shown whole in a frame) + solid buttons */
+.hero--split { padding: clamp(48px, 7vw, 96px) 0 clamp(56px, 7vw, 96px); background: radial-gradient(60% 80% at 85% 40%, rgba(63, 163, 74, .18), transparent 70%), var(--ground); }
+.hero--split::before { display: none; }
+.hero-split { display: grid; gap: clamp(28px, 4vw, 56px); align-items: center; }
+@media (min-width: 1024px) { .hero-split { grid-template-columns: 1fr 1.05fr; } }
+.hero-card { position: relative; margin: 0; border-radius: 22px; overflow: hidden; border: 2px solid var(--violet); box-shadow: 0 0 0 6px rgba(63, 163, 74, .12), 0 30px 80px rgba(0, 0, 0, .55); }
+.hero-card img { width: 100%; height: auto; display: block; aspect-ratio: 4 / 3; object-fit: cover; }
+.hero-card figcaption { position: absolute; left: 0; right: 0; bottom: 0; display: flex; justify-content: space-between; align-items: flex-end; gap: 10px; padding: 14px; }
+.hero-card .img-label { position: static; max-width: 60%; }
+.tag-lazer { font: 400 16px/1 var(--f-display); letter-spacing: .03em; color: #fff; background: var(--c-lazer); padding: 9px 14px; border-radius: 999px; }
+
+/* Solid buttons — no gradients, no sheen */
+.btn--book { background: var(--book); color: #1a1000; }
+.btn--book::after { display: none; }
+.btn--book:hover { background: #FFD84D; color: #1a1000; }
+.btn--outline { background: transparent; border-color: var(--violet); color: var(--ink); }
+.btn--outline:hover { background: var(--violet); border-color: var(--violet); color: #fff; box-shadow: none; }
+.light .btn--outline { color: var(--ink-on-light); border-color: var(--green-deep); }
+.light .btn--outline:hover { background: var(--green-deep); color: #fff; }
+.btn--magenta { background: var(--magenta); }
+.actionbar .ab-book { background: var(--book); }
+.bar .btn--outline { border-color: var(--bar-brass) !important; }
+.bar .btn--outline:hover { background: var(--bar-brass); color: var(--bar-ground) !important; }
